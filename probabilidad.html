@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/probabilidad.css">
+    <title>love</title>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Calcula la probabilidad de estar con el amor de tu vida</h1>
+        <form onsubmit="return validarFormulario()">
+            <label for="nombre1">Ingresa tu nombre:</label>
+            <input type="text" id="nombre1" name="nombre1" placeholder="Crhis" pattern="Crhis" required autocomplete="off">
+            <label for="nombre2">Ingresa su nombre:</label>
+            <input type="text" id="nombre2" name="nombre2" placeholder="Edilson" pattern="Edilson" required autocomplete="off">
+
+            <button type="submit">Calcular Probabilidad</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <div class="container4">
+        <form method="get" action="quieresserminovia.html">
+            <p>Continuar => <input name="boton1" type="image" src="img/corazon2.jpg"  onclick="showPrompt()"></p>  
+       </form>
+    </div> 
+    <script>
+        function validarFormulario() {
+            var nombre1 = document.getElementById("nombre1").value;
+            var nombre2 = document.getElementById("nombre2").value;
+
+            if (nombre1 == "" || nombre2 == "") {
+                alert("Por favor ingrese ambos nombres para calcular la probabilidad.");
+                return false;
+            }
+
+            calcularProbabilidad();
+            return false;
+        }
+
+        function calcularProbabilidad() {
+            var nombre1 = document.getElementById("nombre1").value;
+            var nombre2 = document.getElementById("nombre2").value;
+            var probabilidad = 100;
+
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "";
+            var corazón = document.createElement("span");
+            corazón.className = "corazon";
+            corazón.innerHTML = "&hearts;";
+            resultado.appendChild(corazón);
+            resultado.innerHTML += "<span class='probabilidad'>La probabilidad de que " + nombre1 + " y " + nombre2 + " estén juntos es del " + probabilidad + "%.</span>";
+        }
+        function showPrompt() {
+            var mensaje = "Cierra los ojos antes de pasar a la siguiente página. ¿Estás lista?";
+            var respuesta = prompt(mensaje, "SI");
+            
+            if (respuesta && respuesta.toLowerCase() === "si") {
+                window.location.href = "quieresserminovia.html"; //redirigir a la siguiente página
+            }
+        }
+    </script>
+</body>
+</html>

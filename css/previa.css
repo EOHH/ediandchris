@@ -1,0 +1,92 @@
+/* Estilos CSS para hacer el diseño responsivo */
+body {
+    background-image: url("../img/fondo4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(209, 29, 95);
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(208, 255, 0), 0 0;
+    margin: 10px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #87f7ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 400px; /* Tamaño reducido del video */
+    flex: 1;
+    margin: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.image-container-left,
+.image-container-right {
+    width: 100%;
+    max-width: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-container-left img,
+.image-container-right img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    filter: brightness(80%) contrast(110%);
+}
+
+.container4 {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #93f5ac;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+    .video-container,
+    .image-container-left,
+    .image-container-right {
+        max-width: 100%;
+    }
+
+    .image-container-left img,
+    .image-container-right img {
+        max-width: 100px;
+    }
+}

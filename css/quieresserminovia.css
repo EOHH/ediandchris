@@ -1,0 +1,97 @@
+
+body{
+    background-image: url("../img/fondoultima.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.declaration{
+    text-align: center;
+}
+
+.moveable {
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 100px;
+}
+
+.button-container button {
+    margin: 0 10px;
+}
+
+
+#myButton {
+    background-color: #FF4136;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#myButton:hover {
+    background-color: #FF7261;
+}
+
+#myButton:active {
+    background-color: #FF4136;
+    transform: translateY(2px);
+}
+
+
+#newButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#newButton:hover {
+    background-color: #3e8e41;
+}
+
+#newButton:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}
+
+
+h1 {
+    font-size: 6em;
+    color: #f3f8f8;
+    text-align: center;
+  }
+  
+  /* Estilos para cada letra */
+  h1 span {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  h2 {
+    font-size: 4em;
+    color: #141818;
+    text-align: center;
+  }
+  
+

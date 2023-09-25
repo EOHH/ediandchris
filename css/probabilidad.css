@@ -1,0 +1,73 @@
+body {
+  background-image: url("../img/fondo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+#contenedor {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: rgb(240, 95, 228);  
+  text-shadow: 1px 2px 2px black, 0 0 25px rgb(208, 255, 0), 0 0 ;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(103, 192, 255);  
+  text-shadow: 1px 2px 2px black, 0 0 25px rgb(73, 19, 249), 0 0 ;
+}
+input[type=text] {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+button {
+  background-color: #FF5733;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+}
+button:hover {
+  background-color: #E64D00;
+}
+#resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+#resultado span.corazon {
+  color: #FF5733;
+  font-size: 100px;
+}
+#resultado span.probabilidad {
+  font-size: 30px;
+}
+
+.container4 {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #df23f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container4 form{
+  display: flex;
+  justify-content:center;
+}

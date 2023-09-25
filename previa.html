@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/previa.css">
+    <title>love</title>
+</head>
+<body>
+    <h1> TU ERES MI FELICIDAD<img src="img/sonrojadasssso.jpg" alt="cora" width="20px" height="20px"></h1>
+    <div class="container">
+        <div class="video-container">
+            <video controls loop width="40%">
+                <source src="video/crhisvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="image-container-left">
+            <img src="img/imagen1.jpg" alt="Imagen 1">
+            <img src="img/imagen2.jpg" alt="Imagen 2">
+            <img src="img/imagen3.jpg" alt="Imagen 3">
+        </div>
+        <div class="image-container-right">
+            <img src="img/imagen4.jpg" alt="Imagen 4">
+            <img src="img/imagen5.jpg" alt="Imagen 5">
+            <img src="img/imagen6.jpg" alt="Imagen 6">
+        </div>
+    </div>
+    <div class="container4">
+        <form method="get" action="probabilidad.html">
+            <p>Continuar => </p> 
+            <input name="boton1" type="image" src="img/corazon2.jpg" onclick="showPrompt()">  
+       </form>
+    </div> 
+    <script>
+        function showPrompt() {
+            var mensaje = "Estás a punto de conocer el amor de tu vida. ¿Deseas continuar?";
+            var respuesta = prompt(mensaje, "SI");
+            
+            if (respuesta && respuesta.toLowerCase() === "si") {
+                window.location.href = "probabilidad.html";
+            }
+        }
+    </script>
+</body>
+</html>

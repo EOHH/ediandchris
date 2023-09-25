@@ -1,0 +1,19 @@
+body{
+    background-image: url("../img/fondo5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+h1 {
+    font-size: 6em;
+    color: #daef1c;
+    text-align: center;
+  }
+  
+  /* Estilos para cada letra */
+  h1 span {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  

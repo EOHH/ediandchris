@@ -1,0 +1,93 @@
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;  
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 ;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f487bd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container img {
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(70%);
+    animation: gotti 1.5s infinite;
+}
+
+@keyframes gotti {
+    to {
+        transform: scale(1);
+    }
+    from {
+        transform: scale(1.05);
+    }
+}
+
+.container img:hover {
+    filter: brightness(100%);
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(167, 234, 23);
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%; /* Cambiar el ancho del contenedor para dispositivos móviles */
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px; /* Cambiar el tamaño de fuente del encabezado para dispositivos móviles */
+    }
+    label {
+        font-size: 16px; /* Cambiar el tamaño de fuente de las etiquetas para dispositivos móviles */
+    }
+    input[type="text"] {
+        width: 100%; /* Hacer que el campo de entrada ocupe todo el ancho disponible */
+        max-width: none; /* Anular la limitación del ancho máximo */
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>love</title>
+</head>
+<body>
+	<div class="container">
+		<img src="img/eresmipersonafavorita.jpg" alt="Logo" width="100%">
+		<h1>I love you Crhis</h1>
+		<form autocomplete="off">
+			<label for="nombre1">Dime que me amas!! <img src="img/michi.jpg" style="float: right" alt="cora" width="150px" height="150px"></label>
+			<input type="text" id="nombre1" name="nombre1" placeholder="Teamo" pattern="Teamo" required><br>
+			<button type="button" onclick="validarCampo()">Ingresar</button>
+		</form>
+	</div> 
+	
+	<script>
+	function validarCampo() {
+		var campo = document.getElementById("nombre1").value;
+		if (campo == "") {
+			alert("Por favor, ingresa tu mensaje de amor!");
+		} else {
+			window.location.href='amordtvd.html';
+		}
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quieresserminovia.css">
+    <title>love</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>"Tus pensamientos son mi refugio en la tormenta y tu sonrisa ilumina mis días. Anhelo un futuro juntos, donde cada momento sea una aventura compartida. ¿Te atreves a escribir esta historia a mi lado?"</h2>
+    <h1><span>T</span><span>E</span> <span>Q</span><span>U</span><span>I</span><span>E</span><span>R</span><span>O</span> <span>M</span><span>U</span><span>C</span><span>H</span><span>O</span></h1>
+    <div class="container">
+        <button id="newButton">SI</button>
+        <button id="myButton" class="moveable">NO</button>
+    </div>    
+    <script>
+        var button = document.getElementById("myButton");
+
+        button.addEventListener("mouseover", function() {
+            button.style.left = Math.random() * (window.innerWidth - button.offsetWidth) + "px";
+            button.style.top = Math.random() * (window.innerHeight - button.offsetHeight) + "px";
+        });
+
+        var newButton = document.getElementById("newButton");
+
+        newButton.addEventListener("click", function() {
+            window.location.href = "dameunabrazo.html";
+        });
+
+        // Espera a que se cargue la página
+        $(document).ready(function() {
+        // Selecciona cada letra del título
+        $('h1 span').each(function(index) {
+            // Crea un temporizador para mostrar cada letra gradualmente
+            $(this).delay(500 * index).animate({opacity: 1}, 1000);
+        });
+        });
+    </script>
+</body>
+</html>
